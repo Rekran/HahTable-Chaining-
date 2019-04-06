@@ -29,7 +29,7 @@ string line;
   ifstream myfile(path);
   if (myfile.is_open())
   {
-    while ( getline(myfile,line) )
+    while ( myfile>>line )
     {
     
     	int n = line.length() + 1;
